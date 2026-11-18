@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>table</title>
+    <style>
+      table {
+        border: 2px solid black;
+      }
+      td {
+        border: 2px solid black;
+      }
+      th {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption style="font-weight: bold" ;>
+        Depths of the World's Oceans
+      </caption>
+      <colgroup>
+        <col span="1" style="background-color: #03d6d6" />
+        <col span="2" style="background-color: #054c4c" />
+      </colgroup>
+      <tr>
+        <thead>
+          <th>ocean</th>
+          <th>average depth</th>
+          <th>maximum depth</th>
+          <th>color</th>
+        </thead>
+      </tr>
+      <tbody>
+        <colgroup>
+          <col span="1" style="background-color: #013535" />
+        </colgroup>
+        <tr>
+          <td>pacific ocean</td>
+          <td>4,280 m</td>
+          <td>10,911 m</td>
+          <td rowspan="2">blue</td>
+        </tr>
+        <tr>
+          <td>atlantic ocean</td>
+          <td colspan="2">4,280 m</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

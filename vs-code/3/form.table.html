@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zanguri saiti</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body style="color: rgb(255, 4, 4)">
+    <table>
+      <colgroup>
+        <col span="2" style="background-color: #000000" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>adamianis feri</th>
+          <th>warmoshoba</th>
+          <th>mopyroba</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>shavi</td>
+          <td>aprikeli</td>
+          <td>monobashi sikvdili</td>
+        </tr>
+        <tr>
+          <td>dziritadad tetri</td>
+          <td>ebraeli</td>
+          <td>dasaponeba</td>
+        </tr>
+        <tr>
+          <td>yviteli</td>
+          <td colspan="2">azieli</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+
+    <form>
+      <caption>
+        gaiarett batonad yopnis veripikavia
+      </caption>
+      <div>
+        <input type="text" placeholder="name" name="name" />
+        <input type="password" placeholder="password" name="password" />
+      </div>
+      <div>
+        <br />
+        batonad gachenis tarigi <br />
+        <input type="date" name="date" />
+      </div>
+      <div>
+        choose your gender
+        <br />
+        <input type="radio" name="gender" value="male" /> male
+        <input type="radio" name="gender" value="female" /> female
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          name="checkbox"
+          value="vadastureb rom var batoni"
+        />
+        vadastureb rom var batoni
+      </div>
+      <div>
+        <input
+          name="categories of owner"
+          list="owners"
+          placeholder="ur type of owner"
+        />
+        <datalist id="owners">
+          <option value="zangebis batoni"></option>
+          <option value="zangebis mara ketili batoni"></option>
+          <option value="boroti batoni"></option>
+          <option value="zangi batoni"></option>
+        </datalist>
+      </div>
+      <div>
+        <label for="slave-select">Choose a car:</label>
+
+        <select id="slave-select" name="slave">
+          <option value="" disabled selected>--Please choose mona--</option>
+          <option value="swrapi">swrapi</option>
+          <option value="neli">neli</option>
+          <option value="sinatlis sichqaris">sinatlis sichqaris</option>
+        </select>
+      </div>
+      <div>
+        <label for="color-select">choose a color:</label>
+        <select id="color-select" name="color">
+          <option value="" disabled selected>
+            --please choose which colored slave u want--
+          </option>
+          <option value="shavi">shavi</option>
+          <option value="tetri">kavisperi</option>
+        </select>
+      </div>
+      <div>
+        <label for="price-select">Choose a price:</label>
+        <select id="price-select" name="price">
+          <option value="" disabled selected>
+            --ramdens gadaixdit monashi--
+          </option>
+          <optgroup label="swrapebi">
+            <option value="5gela">5gela</option>
+            <option value="10gela">10gela</option>
+          </optgroup>
+          <optgroup label="dzaan swrapebi">
+            <option value="15gela">15gela</option>
+            <option value="20gela">20gela</option>
+          </optgroup>
+        </select>
+        <br />
+        <input type="submit" />
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+.text {
+  font-size: 60px;
+  background-color: hsl(0, 59%, 41%);
+  padding-top: 6%;
+  padding-bottom: 7%;
+  padding-inline-start: 5%;
+  text-align: center;
+}
+.text1 {
+  color: rgb(3, 74, 3);
+  font-size: 30px;
+}
+.text2 {
+}
+.text3 {
+}
+.text4 {
+}
+.text5 {
+}
+.text6 {
+}
+.text7 {
+}
+.text8 {
+}
+.text9 {
+}
+.text10 {
+}
+.text11 {
+}
+.footer {
+}
+.button {
+  font-size: 30px;
+  font-weight: 600;
+  background-color: rgba(45, 166, 5, 0.959);
+  height: 100px;
+  width: 200px;
+}
+.button:hover {
+  background-color: rgb(42, 125, 0);
+}
+.button:active {
+  background-color: rgba(40, 150, 0);
+}
+.button {
+  border: 7px solid rgb(2, 30, 1);
+  border-radius: 10px;
+  border-top-style: double;
+}

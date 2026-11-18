@@ -1,0 +1,27 @@
+// Variables for consistent parent styling
+$primary-color: #1a56db;
+$base-font: Arial, sans-serif;
+$parent-border: 2px solid #000000;
+
+// Placeholder selector for SCSS rule inheritance
+%base-box-layout {
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+// Parent element styling
+.parent-box {
+  @extend %base-box-layout; // Inherits rules from placeholder
+  color: $primary-color; // Inherited by HTML child elements
+  font-family: $base-font; // Inherited by HTML child elements
+  border: $parent-border; // NOT inherited automatically by HTML children
+  padding: 20px; // NOT inherited automatically by HTML children
+
+  // Nested child element forcing CSS inheritance
+  .forced-inherit {
+    @extend %base-box-layout; // Inherits rules from placeholder
+    border: inherit; // Explicitly inherits the parent's CSS border
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
